@@ -1,0 +1,40 @@
+header {
+    padding-top: 10px;
+    padding-bottom: 15px;
+    background-image: url(./img/bg-contenu2.png);
+    background-repeat: repeat-x;
+}
+
+#recherche_conteneur form {
+    display: flex;
+    margin-top: 15px;   
+}
+
+.navbar-nav {
+    width: 100%;
+}
+
+.navbar-nav .row {
+    flex: 1;
+    border-bottom: solid 3px #295f95;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.navbar-nav .row .col-md-3 {
+    display: flex;
+    justify-content: center;
+    background-image: url(./img/bkg_menu_demarches.jpg);
+    background-repeat: repeat-x;
+    margin-right: 0.5px;
+    margin-left: 0.5px;
+    max-width: 24.9%;
+}
+
+header {
+    margin: 0px !important;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    content: "> " !important;
+}
