@@ -3,15 +3,23 @@ header {
     padding-bottom: 15px;
     background-image: url(./img/bg-contenu2.png);
     background-repeat: repeat-x;
+    margin: 0px !important;
 }
+
 
 #recherche_conteneur form {
     display: flex;
     margin-top: 15px;   
 }
 
+
 .navbar-nav {
     width: 100%;
+}
+
+.navbar {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
 }
 
 .navbar-nav .row {
@@ -19,6 +27,14 @@ header {
     border-bottom: solid 3px #295f95;
     border-bottom-left-radius: 3px;
     border-bottom-right-radius: 3px;
+}
+
+.navbar-nav .nav-link {
+    color: #3574e2 !important;
+}
+
+.navbar-nav .active {
+    font-weight: 500;
 }
 
 .navbar-nav .row .col-md-3 {
@@ -31,10 +47,61 @@ header {
     max-width: 24.9%;
 }
 
-header {
-    margin: 0px !important;
+
+.breadcrumb {
+    background-color: white !important;
 }
 
 .breadcrumb-item + .breadcrumb-item::before {
     content: "> " !important;
+}
+
+
+.card {
+    border-top-right-radius: 15px !important;
+    border-top-left-radius: 15px !important;
+}
+.card-header:first-child {
+    border-top-right-radius: 15px !important;
+    border-top-left-radius: 15px !important;
+}
+
+.card .tab_header{
+    background-color: #295f95;
+    color: white;
+    text-transform: uppercase;
+    padding-left: 60px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.card .tips_header{
+    background-color: #295f95;
+    color: white;
+    text-transform: uppercase;
+    padding-left: 60px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.card .news_header{
+    background-color: #9C2F03;
+    color: white;
+    text-transform: uppercase;
+    padding-left: 60px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+
+.display-5 {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.2
+}
+
+.display-6 {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.2
 }
