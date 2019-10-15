@@ -58,15 +58,15 @@ header {
 
 
 .card {
-    border-top-right-radius: 15px !important;
-    border-top-left-radius: 15px !important;
+    border-radius: 15px !important;
 }
+
 .card-header:first-child {
     border-top-right-radius: 15px !important;
     border-top-left-radius: 15px !important;
 }
 
-.card .tab_header{
+.card .tab_header {
     background-color: #295f95;
     color: white;
     text-transform: uppercase;
@@ -75,7 +75,7 @@ header {
     padding-bottom: 5px;
 }
 
-.card .tips_header{
+.card .tips_header {
     background-color: #295f95;
     color: white;
     text-transform: uppercase;
@@ -84,7 +84,7 @@ header {
     padding-bottom: 5px;
 }
 
-.card .news_header{
+.card .news_header {
     background-color: #9C2F03;
     color: white;
     text-transform: uppercase;
@@ -93,9 +93,52 @@ header {
     padding-bottom: 5px;
 }
 
+.tab .card-body {
+    background-color: #F1F6F8;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px
+}
+
+.side .card-body {
+    background-color: #F1F6F8;
+}
+
+.side .card-footer {
+    border-top: none !important;
+    background-color: #F1F6F8 !important;
+    text-align: right;
+    padding: 5px 10px !important;
+    color: #295F95;
+    font-weight: 600;
+    border-bottom-left-radius: 15px !important;
+    border-bottom-right-radius: 15px !important
+}
+
+.tips_header + .card-body {
+    padding: 30px 20px;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.tips_header + .card-body a{
+    text-decoration: none;
+    color: #212529;
+}
+
+.news_header + .card-body {
+    padding: 30px 20px;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.news_header + .card-body a{
+    text-decoration: none;
+    color: #212529;
+}
+
 
 .display-5 {
-    font-size: 18px;
+    font-size: 22px;
     font-weight: 400;
     line-height: 1.2
 }
@@ -104,4 +147,26 @@ header {
     font-size: 18px;
     font-weight: 300;
     line-height: 1.2
+}
+
+
+.tab_col ul {
+    list-style: none;
+    padding-left: 0px;
+    font-size: 15px;
+}
+
+.tab_col a {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.side ul {
+    list-style: none;
+    padding-left: 0px;
+}
+
+.date {
+    color: #B82F03;
+    font-weight: 500;
 }
