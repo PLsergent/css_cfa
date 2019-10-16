@@ -50,6 +50,10 @@ header {
     max-width: 24.9%;
 }
 
+.navbar-nav .nav-link:hover {
+    color: black !important
+}
+
 
 /* ================= NAV ================= */
 
