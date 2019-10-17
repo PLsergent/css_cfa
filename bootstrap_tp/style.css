@@ -27,9 +27,6 @@ header {
 
 .navbar-nav .row {
     flex: 1;
-    border-bottom: solid 3px #295f95;
-    border-bottom-left-radius: 3px;
-    border-bottom-right-radius: 3px;
 }
 
 .navbar-nav .nav-link {
@@ -80,7 +77,7 @@ header {
 
 /* ================= CARD - HEADER ================= */
 
-.card .tab_header {
+.card .tab-header {
     background-color: #295f95;
     color: white;
     text-transform: uppercase;
@@ -89,7 +86,7 @@ header {
     padding-bottom: 5px;
 }
 
-.card .tips_header {
+.card .tips-header {
     background-color: #295f95;
     color: white;
     text-transform: uppercase;
@@ -98,7 +95,7 @@ header {
     padding-bottom: 5px;
 }
 
-.card .news_header {
+.card .news-header {
     background-color: #9C2F03;
     color: white;
     text-transform: uppercase;
@@ -119,19 +116,26 @@ header {
 
 /* ================= TABLEAU DE BORD - LIST ================= */
 
-.tab_col ul {
+.main-tab ul {
     list-style: none;
     padding-left: 0px;
     font-size: 15px;
 }
 
-.tab_col a {
+.main-tab a {
     font-size: 16px;
     font-weight: 600;
 }
 
 
 /* ================= SIDE - CARD ================= */
+
+
+@media (max-width: 1200px) {
+    .side .card {
+        margin-top: 25px
+    }
+ }
 
 .side .card-body {
     background-color: #F1F6F8;
@@ -148,24 +152,24 @@ header {
     border-bottom-right-radius: 15px !important
 }
 
-.tips_header + .card-body {
+.tips-header + .card-body {
     padding: 30px 20px;
     font-size: 14px;
     text-decoration: none;
 }
 
-.tips_header + .card-body a{
+.tips-header + .card-body a{
     text-decoration: none;
     color: #212529;
 }
 
-.news_header + .card-body {
+.news-header + .card-body {
     padding: 30px 20px;
     font-size: 14px;
     text-decoration: none;
 }
 
-.news_header + .card-body a{
+.news-header + .card-body a{
     text-decoration: none;
     color: #212529;
 }

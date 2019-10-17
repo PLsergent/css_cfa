@@ -32,11 +32,11 @@
 	<body cz-shortcut-listen="true">
 		<div class="container">
 			<header class="row">
-				<div id="logo" class="col-md-9">
+				<div id="logo" class="col-xl-9">
 					<img src="img/logo_msp_Part.png" width="365" height="73">
 				</div>
 
-				<div role="search" id="recherche_conteneur" class="col-md-3">
+				<div role="search" id="recherche_conteneur" class="col-xl-3">
 					<form action="https://mon.service-public.fr/portail/faces/jsp/liste_res_tout.jsp" method="get">
 						<input type="text" class="span-5" name="fullText" id="rechercheInput" value="Rechercher" title="Rechercher">
 						<input type="submit" value="ok" title="Lancer la recherche" id="ok_recherche">
@@ -44,7 +44,7 @@
 				</div>				
 			</header>
 
-			<nav class="navbar navbar-expand-md navbar-light bg-light">
+			<nav class="navbar navbar-expand-xl navbar-light bg-light">
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
@@ -53,7 +53,7 @@
 						<div class="row">
 							<div class="col-md-3">
 								<li class="nav-item dropdown">
-									<a class="nav-link active" href="#" id="tableau_de_bord" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									<a class="nav-link active d-inline-block text-truncate" href="#" id="tableau_de_bord" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 									Mon tableau de bord
 									</a>
 									<div class="dropdown-menu" aria-labelledby="tableau_de_bord">
@@ -65,7 +65,7 @@
 							</div>
 							<div class="col-md-3">
 								<li class="nav-item dropdown">
-									<a class="nav-link" href="#" id="mes_documents" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									<a class="nav-link d-inline-block text-truncate" href="#" id="mes_documents" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 									Mes documents
 									</a>
 									<div class="dropdown-menu" aria-labelledby="mes_documents">
@@ -76,7 +76,7 @@
 							</div>
 							<div class="col-md-3">
 								<li class="nav-item dropdown">
-									<a class="nav-link" href="#" id="profil" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									<a class="nav-link d-inline-block text-truncate" href="#" id="profil" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 									Mon profil
 									</a>
 									<div class="dropdown-menu" aria-labelledby="profil">
@@ -88,7 +88,7 @@
 							</div>
 							<div class="col-md-3">
 								<li class="nav-item dropdown">
-									<a class="nav-link" href="#" id="services" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									<a class="nav-link d-inline-block text-truncate" href="#" id="services" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 									Catalogue des services
 									</a>
 									<div class="dropdown-menu" aria-labelledby="services">
@@ -113,14 +113,14 @@
 			</nav>
 
 			<div class="row">
-				<div class="col-md-9 px-2 tab">
+				<div class="col-lg-9 px-2 tab">
 					<div class="card shadow-sm">
-						<h5 class="display-5 card-header tab_header">Mon tableau de bord</h5>
+						<h5 class="display-5 card-header tab-header">Mon tableau de bord</h5>
 						<span class="mt-2 mb-1 ml-2" style="color: #295F95">Découvrez ci-dessous ce que vous pouvez faire dans la rubrique « Mon tableau de bord ».</span>
 						<div class="card-body">
 							<div class="row">
 								<div class="col-md-4">
-									<div class="tab_col">
+									<div class="main-tab">
 										<a href="jsp/mes_liaisons.jsp"><img src="img/402_429_Liaisons.jpg" width="60" height="60">Mes liaisons de comptes</a>
 										<ul class="mt-5">
 											<li>Accédez d'un clic à vos comptes administratifs sans ressaisir vos identifiants et mots de passe.</li>
@@ -129,7 +129,7 @@
 									</div>
 								</div>
 								<div class="col-md-4">
-									<div class="tab_col">
+									<div class="main-tab">
 										<a href="jsp/mon_calendrier.jsp"><img src="img/605_403_418_picto_agenda.gif" width="60" height="60">Mon calendrier </a>
 										<ul class="mt-5">
 											<li>Notez et visualisez toutes vos échéances administratives.</li>
@@ -138,7 +138,7 @@
 									</div>
 								</div>
 								<div class="col-md-4">
-									<div class="tab_col"> 
+									<div class="main-tab"> 
 										<a href="jsp/mon_suivi.jsp"><img src="img/401_430_suivi.jpg" width="60" height="60">Mon suivi </a>
 										<ul class="mt-5">
 											<li>Suivez l'avancement de vos démarches en ligne.</li>
@@ -150,9 +150,9 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-3 px-2 side">
+				<div class="col-lg-3 px-2 side">
 					<div class="card mb-3 shadow-sm">
-						<h5 class="display-6 card-header tips_header">Les actuces</h5>
+						<h5 class="display-6 card-header tips-header">Les actuces</h5>
 						<div class="card-body">
 							<a href="jsp/authent/page_detail_astuce_MSP.jsp?idAstuce=1001" target="_self" title="Lien vers Accédez depuis mon.service-public.fr à une nouvelle génération de démarches en ligne">Accédez depuis mon.service-public.fr à une nouvelle génération de démarches en ligne</a>
 						</div>
@@ -161,7 +161,7 @@
 						</div>
 					</div>
 					<div class="card shadow-sm">
-						<h5 class="display-6 card-header news_header">Les actualités</h5>
+						<h5 class="display-6 card-header news-header">Les actualités</h5>
 						<div class="card-body">
 							<ul>
 								<li><a href="jsp/authent/page_detail_actualite_MSP.jsp?idActu=11644" title="Lien vers Votre avis nous intéresse…"><span class="date">22/10/2012</span> Que pensez-vous de MSP ?</a></li>
