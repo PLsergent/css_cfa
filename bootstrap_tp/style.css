@@ -42,9 +42,6 @@ header {
     justify-content: center;
     background-image: url(./img/bkg_menu_demarches.jpg);
     background-repeat: repeat-x;
-    margin-right: 0.5px;
-    margin-left: 0.5px;
-    max-width: 24.9%;
 }
 
 .navbar-nav .nav-link:hover {
@@ -53,6 +50,10 @@ header {
 
 .nav-link:hover + .dropdown-menu{
     display: block;
+}
+
+.navbar-nav .dropdown-menu {
+    position: absolute !important;
 }
 
 
