@@ -51,6 +51,10 @@ header {
     color: black !important
 }
 
+.nav-link:hover + .dropdown-menu{
+    display: block;
+}
+
 
 /* ================= NAV ================= */
 
@@ -131,7 +135,7 @@ header {
 /* ================= SIDE - CARD ================= */
 
 
-@media (max-width: 1200px) {
+@media (max-width: 1000px) {
     .side .card {
         margin-top: 25px
     }
