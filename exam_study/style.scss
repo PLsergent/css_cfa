@@ -1,0 +1,88 @@
+$font-stack:    Helvetica, sans-serif;
+$primary-color: #333;
+
+body {
+  font: 100% $font-stack;
+  color: $primary-color;
+}
+
+#content div#main h2 {
+    color: gray;
+}
+
+#content #main>h2 {
+    color: blue;
+}
+
+body #content div h2 {
+    color: green;
+}
+
+
+#content div#ciceron h2 {
+    color: orange;
+}
+
+#main .latin h2 {
+    color: yellow;
+}
+
+div#main div#ciceron h2.latin {
+    color: red;
+}
+
+
+table {
+    margin-left: 5px;
+}
+
+td {
+    padding: 25px;
+    border: solid 1px black;
+}
+
+tr:nth-child(2n+1) td:nth-child(2n+1) {
+    background-color: black;
+}
+
+tr:nth-child(2n) td:nth-child(2n) {
+    background-color: black;
+}
+
+
+.item1 {
+    grid-area: header;
+    background-color: red;
+}
+
+.item2 {
+    grid-area: menu;
+    background-color: aqua;
+}
+
+.item3 {
+    grid-area: main;
+    background-color: rgb(212, 146, 59);
+}
+
+.item4 {
+    grid-area: footer;
+    background-color: blueviolet;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        "menu main main"
+        "footer footer footer";
+    grid-gap: 5px;
+    padding: 20px;
+    grid-template-rows: 1fr 6fr 3fr;
+}
+
+.grid-container > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
